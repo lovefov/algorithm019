@@ -2,7 +2,7 @@
 
 ## go 的哈希表
 
--golang 的 map 底层就是 hashmap
+- golang 的 map 底层就是 hashmap
 
 - go 的 map 通过拉链法缓解 hash 冲突的问题
 
