@@ -42,7 +42,7 @@
 
 - 会用主定理的结论分析
   - 二分查找 O(logn)
-  - 合并排序 O(nlogn) 
+  - 合并排序 O(nlogn)
   - 排序的二维矩阵 O(n)
   - 二叉树的遍历 O(n)
 
@@ -60,11 +60,19 @@
 
 ### 链表
 
-- container/list 里面实现双向链表,底层是一个环形链表. [list 源码](https://golang.org/src/container/list/list.go)
+- container/list 里面实现双向链表,底层是一个环形(循环)链表. [list 源码](https://golang.org/src/container/list/list.go)
 
 - go 的双向链表通过惰性初始化避免了程序启动时同时大量内存分配.
 
 - 实现了操作链表的基本方法,Init() , Remove() ,Insert...() Move...() Push...()
+
+### 跳表
+
+- 使用了升维的方式解决了链表查找的复杂度偏高的问题
+
+- 作为 trade off 带来的问题是维护和空间消耗的增加
+
+- 用于已排序的数据的搜索.类似的 二分 平衡树.
 
 ### 数据结构脑图
 
